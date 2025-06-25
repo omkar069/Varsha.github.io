@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Good Boyfriend Reasons For Varsha❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fbd3e9, #bb377d);
+      color: white;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #text-display {
+      font-size: 2em;
+      text-align: center;
+      width: 80%;
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div id="text-display">Loading...</div>
+
+  <script>
+    const lines = [
+      "Reasons why I would be a good boyfriend 💕",
+      "1. I would text you every day 📱",
+      "2. I will protect you always 🛡️",
+      "3. I will support you emotionally 🤗",
+      "4. I will be loyal and caring 🫶",
+      "5. I’ll grow with you 🌱",
+     "6. I will always be there for you 🤝",
+        "7. I will make you laugh 😂",
+        "8. I will respect your space and privacy 🕊️",
+        "9. I will listen to you attentively 👂",
+        "10. I will surprise you with little things 🎁",
+        "11. I will always encourage you to be your best self 🌟",
+        "12. I will cherish every moment we spend together ⏳",
+        "13. I will be your biggest fan and supporter 📣",
+        "14. I will love you unconditionally ❤️",
+        "Still soooo mannnyyyyy......",
+        "What do you think? 😊",
+    ];
+
+    let index = 0;
+    const textDiv = document.getElementById('text-display');
+
+    function showNextLine() {
+      textDiv.textContent = lines[index];
+      textDiv.style.animation = 'none'; // Reset animation
+      textDiv.offsetHeight; // Trigger reflow
+      textDiv.style.animation = null; // Restart animation
+      index++;
+      if (index < lines.length) {
+        setTimeout(showNextLine, 2000); // 2 seconds delay
+      }
+    }
+
+    showNextLine(); // Start
+  </script>
+</body>
+</html>
